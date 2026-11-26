@@ -1,0 +1,710 @@
+%bab2 matlab 2.1
+  %soal 2.1
+>>  A=[1 2 3; 4 5 6; 2 4 3]
+
+A = 3×3
+     1     2     3
+     4     5     6
+     2     4     3
+
+  %soal 2.2
+>> syms x y
+B = [-5*x, log(2*x) + 7*sin(3*y); 3i, 4 - 2i]
+ 
+B =
+ 
+[-5*x, log(2*x) + 7*sin(3*y)]
+[  3i,                4 - 2i]
+
+  %soal 2.3
+>> C=[1 5 3 4]
+
+C = 1×4
+     1     5     3     4
+
+  %soal 2.4
+>> syms i
+D=[1 2*i 3+5*i 4]
+ 
+D =
+ 
+[1, 2*i, 5*i + 3, 4]
+
+  %soal 2.5
+>> E=[1;3;2;4]
+
+E = 4×1
+     1
+     3
+     2
+     4
+
+  %soal 2.6
+>> syms i
+F=[1;2*i;3+5*i;4]
+ 
+F =
+ 
+      1
+    2*i
+5*i + 3
+      4
+
+%bab2 matlab 2.2
+  di file gambar
+
+%bab2 matlab 2.3
+  %soal 2.7
+>> abs(-50)
+
+ans =
+
+    50
+
+  %soal 2.8
+>> exp(-2)
+
+ans =
+
+    0.1353
+
+  %soal 2.9
+>> -exp(-2)
+
+ans =
+
+   -0.1353
+
+  %soal 2.10
+>> log(125)
+
+ans =
+
+    4.8283
+
+  %soal 2.11
+>> log10(2000)
+
+ans =
+
+    3.3010
+
+  %soal 2.12
+>> sqrt(49)
+
+ans =
+
+     7
+
+%bab2 matlab 2.4
+  %soal 2.13
+>> cosd(150)
+
+ans =
+
+   -0.8660
+
+  %soal 2.14
+>> sind(150)
+
+ans =
+
+    0.5000
+
+  %soal 2.15
+>> tand(150)
+
+ans =
+
+   -0.5774
+
+  %soal 2.16
+>> acosd(0.8660)
+
+ans =
+
+   30.0029
+
+  %soal 2.17
+>> asind(0.8660)
+
+ans =
+
+   59.9971
+
+  %soal 2.18
+>> atand(0.8660)
+
+ans =
+
+   40.8926
+
+  %soal 2.19
+>> cosh(150*pi/180)
+
+ans =
+
+    6.8906
+
+  %soal 2.20
+>> sinh(150*pi/180)
+
+
+ans =
+
+    6.8176
+
+  %soal 2.21
+>> tanh(150*pi/180)
+
+ans =
+
+    0.9894
+
+  %soal 2.22
+>> cscd(150)
+
+ans =
+
+     2
+
+  %soal 2.23
+>> secd(150)
+
+ans =
+
+   -1.1547
+
+  %soal 2.24
+>> cotd(150)
+
+ans =
+
+   -1.7321
+
+%bab2 matlab 2.5
+  %soal 2.25
+>> x = [1.0000 4.0000 3.0000 2.0000 5.0000 6.0000]
+
+x = 1×6
+     1     4     3     2     5     6
+
+  %soal 2.25a (Nilai maksimum)
+>> max(x)
+
+ans =
+
+     6
+
+  %soal 2.25b (Nilai minimum)
+>> min(x)
+
+ans =
+
+     1
+
+  %soal 2.25c (Nilai mean)
+>> mean(x)
+
+ans =
+
+    3.5000
+
+  %soal 2.25d (Nilai median)
+>> median(x)
+
+ans =
+
+    3.5000
+
+  %soal 2.25e (Nilai varian)
+>> var(x)
+
+ans =
+
+    3.5000
+
+  %soal 2.25f (Nilai koefisien korelasi)
+corrcoef(x)
+
+ans =
+
+     1
+
+%bab2 matlab 2.6
+  %soal 2.26
+>> y = [0.8147 0.9134 0.2785; 0.9058 0.6324 0.5469; 0.1270 0.0975 0.9575]
+
+y = 3×3
+     0.8147     0.9134     0.2785
+     0.9058     0.6324     0.5469
+     0.1270     0.0975     0.9575
+
+  %soal 2.26a (Nilai maksimum)
+>> max(y)
+
+ans = 1×3
+     0.9058     0.9134     0.9575
+
+  %soal 2.26b (Nilai minimum)
+>> min(y)
+
+ans = 1×3
+     0.1270     0.0975     0.2785
+
+  %soal 2.26c (Nilai mean)
+>> mean(y)
+
+ans = 1×3
+     0.6158     0.5478     0.5943
+
+  %soal 2.26d (Nilai median)
+>> median(y)
+
+ans = 1×3
+     0.8147     0.6324     0.5469
+
+  %soal 2.26e (Nilai varian)
+>> var(y)
+
+ans = 1×3
+     0.1813     0.1718     0.1169
+
+  %soal 2.26f (Nilai koefisien korelasi)
+>> corrcoef(y)
+
+ans = 3×3
+      1.0000      0.8991     -0.8725
+      0.8991      1.0000     -0.9984
+     -0.8725     -0.9984      1.0000
+
+
+%soal bab 3.1
+  %soal 3.1
+>> panjang=5;
+lebar=20;
+luas=panjang*lebar
+
+luas =
+
+   100
+
+%bab3 matlab 3.2
+  %soal 3.2
+>> P = 'Thanisa Nashwa Azura'
+
+P =
+
+    'Thanisa Nashwa Azura'
+
+>> double(P)
+
+ans = 1×20
+     84     104     97     110     105     115     97     32     78     97     115     104     119     97     32     65	⋯
+     Display all 20 columns
+
+
+ans =
+
+    84   104    97   110   105   115    97    32    78    97   115   104   119    97    32    65   122   117   114    97
+
+>> abs(P)
+
+ans = 1×20
+     84     104     97     110     105     115     97     32     78     97     115     104     119     97     32     65	⋯
+     Display all 20 columns
+
+
+ans =
+
+    84   104    97   110   105   115    97    32    78    97   115   104   119    97    32    65   122   117   114    97
+
+>> char(P)
+
+ans =
+
+    'Thanisa Nashwa Azura'
+
+>> t = P(5:8)
+
+t =
+
+    'isa '
+
+%bab3 matlab 3.3
+  %soal 3.3
+>> a = 'Heru Dibyo Laksono'
+
+a =
+
+    'Heru Dibyo Laksono'
+
+>> b = 'Jurusan Teknik Elektro'
+
+b =
+
+    'Jurusan Teknik Elektro'
+
+>> c = 'Fakultas Teknik'
+
+c =
+
+    'Fakultas Teknik'
+
+>> d = 'Universitas Andalas'
+
+d =
+
+    'Universitas Andalas'
+
+%bab3 matlab 3.4
+  %soal 3.4
+>> disp(a)
+Heru Dibyo Laksono
+>> disp(b)
+Jurusan Teknik Elektro
+>> disp(c)
+Fakultas Teknik
+>> disp(d)
+Universitas Andalas
+
+%bab3 matlab 3.5
+  %soal 3.5
+>> disp('Reri Afrianita')
+Reri Afrianita
+>> disp('Jurusan Teknik Lingkungan')
+Jurusan Teknik Lingkungan
+>> disp('Fakultas Teknik')
+Fakultas Teknik
+>> disp('Universitas Andalas')
+Universitas Andalas
+
+%bab3 matlab 3.6
+  %soal 3.6
+>> No_Pendaftaran = 123450654321;
+disp(['No. Pendaftaran saya adalah ',num2str(No_Pendaftaran)])
+No. Pendaftaran saya adalah 123450654321
+
+%bab3 matlab 3.7
+  %soal 3.7
+>> No_nim = input(' Masukkan No Nim Anda : ','s')
+ Masukkan No Nim Anda : 160826004
+
+No_nim =
+
+    '160826004'
+
+%bab3 matlab 3.8
+  %soal 3.8
+>> x = 'Budi Sampurno';
+y = 'PT. Sampoerna Indonesia';
+fprintf('%s\n',x)
+Budi Sampurno
+>> fprintf('%s\n',y)
+PT. Sampoerna Indonesia
+
+%bab3 matlab 3.9
+  %soal 3.9
+>> p = {'Objek Wisata di Sumatera Barat';
+'Bukittingi dengan Objek Wisata Jam Gadang';
+'Solok dengan Objek Wisata Danau Singkarak';
+'Tanahdatar dengan Objek Wisata Istano Pagaruyung';
+'Sawahlunto dengan Objek Wisata Tambang Dalam'}
+
+p =
+
+  5×1 cell array
+
+    {'Objek Wisata di Sumatera Barat'                  }
+    {'Bukittingi dengan Objek Wisata Jam Gadang'       }
+    {'Solok dengan Objek Wisata Danau Singkarak'       }
+    {'Tanahdatar dengan Objek Wisata Istano Pagaruyung'}
+    {'Sawahlunto dengan Objek Wisata Tambang Dalam'    }
+
+%bab3 matlab 3.10
+  %soal 3.10
+>> whos
+
+  Name                Size            Bytes  Class     Attributes
+
+  No_Pendaftaran      1x1                 8  double              
+  No_nim              1x9                18  char                
+  P                   1x20               40  char                
+  a                   1x18               36  char                
+  ans                 1x20               40  char                
+  b                   1x22               44  char                
+  c                   1x15               30  char                
+  d                   1x19               38  char                
+  p                   5x1              1008  cell                
+  t                   1x4                 8  char                
+  x                   1x13               26  char                
+  y                   1x23               46  char                
+
+>> p(1)
+
+ans =
+
+  1×1 cell array
+
+    {'Objek Wisata di Sumatera Barat'}
+
+>> p(2)
+
+ans =
+
+  1×1 cell array
+
+    {'Bukittingi dengan Objek Wisata Jam Gadang'}
+
+>> p(3)
+
+ans =
+
+  1×1 cell array
+
+    {'Solok dengan Objek Wisata Danau Singkarak'}
+
+>> p(4)
+
+ans =
+
+  1×1 cell array
+
+    {'Tanahdatar dengan Objek Wisata Istano Pagaruyung'}
+
+>> p(5)
+
+ans =
+
+  1×1 cell array
+
+    {'Sawahlunto dengan Objek Wisata Tambang Dalam'}
+
+%bab3 matlab 3.11
+  %soal 3.11
+>> %
+Mahasiswa.Nama = 'Rudi Sujarwo';
+Mahasiwa.NIM = '95171041';
+Mahasiwa.Prodi = 'Teknik Mesin';
+Mahasiswa(2).Nama = 'Rudi Sujarwi';
+Mahasiwa(2).NIM = '95172042';
+Mahasiwa(2).Prodi = 'Teknik Sipil';
+Mahasiswa(3).Nama = 'Rudi Sukarwo';
+Mahasiwa(3).NIM = '95173043';
+Mahasiwa(3).Prodi = 'Teknik Industri';
+Mahasiswa(4).Nama = 'Rudi Sukarwijo';
+Mahasiwa(4).NIM = '95175044';
+Mahasiwa(4).Prodi = 'Teknik Lingkungan';
+Mahasiswa(5).Nama = 'Rudi Sukarmanto';
+Mahasiwa(5).NIM = '95175045';
+Mahasiwa(5).Prodi = 'Teknik Elektro';
+%
+M1 = Mahasiswa(1)
+M2 = Mahasiswa(2)
+M3 = Mahasiswa(3)
+M4 = Mahasiswa(4)
+M5 = Mahasiswa(5)
+
+M1 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sujarwo'
+
+
+M2 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sujarwi'
+
+
+M3 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarwo'
+
+
+M4 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarwijo'
+
+
+M5 = 
+
+  struct with fields:
+
+    Nama: 'Rudi Sukarmanto'
+
+%bab3 matlab 3.12
+  %soal 3.12
+ %
+gunung = struct('Situs',{'Rinjani','Merapi'},...
+'Waktu',{2.34},...
+'Temperatur',{24 19},...
+'Tekanan',{1023 1015},...
+'Ketinggian',{2024 2012})
+%
+G1 = gunung(1)
+G2 = gunung(2)
+
+gunung = 
+
+  1×2 struct array with fields:
+
+    Situs
+    Waktu
+    Temperatur
+    Tekanan
+    Ketinggian
+
+
+G1 = 
+
+  struct with fields:
+
+         Situs: 'Rinjani'
+         Waktu: 2.3400
+    Temperatur: 24
+       Tekanan: 1023
+    Ketinggian: 2024
+
+
+G2 = 
+
+  struct with fields:
+
+         Situs: 'Merapi'
+         Waktu: 2.3400
+    Temperatur: 19
+       Tekanan: 1015
+    Ketinggian: 2012
+
+%bab3 matlab 3.13
+  %soal 3.13
+>> A = [ 7 8 9; 4 2 6; 1 2 3]
+
+A = 3×3
+     7     8     9
+     4     2     6
+     1     2     3
+
+>> A(:,:,2) = A*4
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+>> A(:,:,3) = eye(3)
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+
+A(:,:,3) =
+
+     1     0     0
+     0     1     0
+     0     0     1
+
+%bab3 matlab 3.14
+  %soal 3.14
+>> A(:,:,3) = 4
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+    28    32    36
+    16     8    24
+     4     8    12
+
+
+A(:,:,3) =
+
+     4     4     4
+     4     4     4
+     4     4     4
+
+%bab3 matlab 3.15
+  %soal 3.15
+>> A(2,:,1)
+
+ans = 1×3
+     4     2     6
+
+>> A(2,:,2)
+
+ans = 1×3
+     16     8     24
+
+>> A(2,:,:)
+
+ans(:,:,1) =
+
+     4     2     6
+
+
+ans(:,:,2) =
+
+    16     8    24
+
+
+ans(:,:,3) =
+
+     4     4     4
+
+%bab3 matlab 3.16
+  %soal 3.16
+>> A(:,:,2) = []
+
+A(:,:,1) =
+
+     7     8     9
+     4     2     6
+     1     2     3
+
+
+A(:,:,2) =
+
+     4     4     4
+     4     4     4
+     4     4     4
+
+%bab3 matlab 3.17
+  %soal 3.17
+>> A(:)'
+
+ans = 1×18
+     7     4     1     8     2     2     9     6     3     4     4     4     4     4     4     4     4     4
+
+%bab3 matlab 3.18
+  %soal 3.18
+di file gambvar
